@@ -1,0 +1,29 @@
+$TTL 3h
+
+@ IN SOA ns1.foo.org.nz. camertp1.foo.org.nz. (
+    48923694 ; serial
+    3h ; refresh slave
+    1h ; retry slave
+    3d ; slave expires
+    1h ) ; negative ttl
+
+foo.org.nz. IN NS ns1.foo.org.nz.
+foo.org.nz. IN NS ns2.foo.org.nz.
+
+bsd-server.foo.org.nz. IN A 172.16.5.12
+bsd-relay.foo.org.nz. IN A 192.168.2.100
+router1.foo.org.nz. IN A 10.25.1.106
+router1.foo.org.nz. IN A 172.16.5.2
+router2.foo.org.nz. IN A 172.16.5.3
+router2.foo.org.nz. IN A 192.168.2.2
+wind-relay.foo.org.nz. IN A 192.168.2.101
+lin-client.foo.org.nz. IN A 172.16.5.30
+ns1.foo.org.nz. IN A 172.16.5.12
+ns2.foo.org.nz. IN A 172.16.5.12
+
+ns1.foo.org.nz. IN CNAME bsd-server.foo.org.nz.
+ns2.foo.org.nz. IN CNAME bsd-server.foo.org.nz.
+www.foo.org.nz. IN CNAME bsd-server.foo.org.nz.
+
+foo.org.nz.  IN MX 10 bsd-server.foo.org.nz.
+foo.org.nz. IN MX 20 bsd-relay.foo.org.nz.

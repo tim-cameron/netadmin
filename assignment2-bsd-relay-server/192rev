@@ -1,1 +1,17 @@
 
+
+
+$TTL 3h
+2.168.192.in-addr.arpa. IN SOA ns1.foo.org.nz. camertp1.foo.org.nz. (
+    235291
+    3h
+    1h
+    3d
+    1h
+)
+
+2.168.192.in-addr.arpa. IN NS ns1.foo.org.nz.
+2.168.192.in-addr.arpa. IN NS ns2.foo.org.nz.
+100.2.168.192.in-addr.arpa. IN PTR bsd-relay.foo.org.nz.
+101.2.168.192.in-addr.arpa. IN PTR win-relay.foo.org.nz.
+2.2.168.192.in-addr.arpa. IN PTR router2.foo.org.nz.

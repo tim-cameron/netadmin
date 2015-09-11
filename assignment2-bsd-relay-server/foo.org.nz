@@ -1,1 +1,23 @@
 
+$TTL 3h
+foo.org.nz. IN SOA ns1.foo.org.nz. camertp1.foo.org.nz. (
+    329529352
+    3h
+    1h
+    3d
+    1h
+)
+
+foo.org.nz. IN NS ns1.foo.org.nz.
+foo.org.nz. IN NS ns2.foo.org.nz.
+foo.org.nz. IN MX 10 bsd-server.foo.org.nz.
+foo.org.nz. IN MX 20 bsd-server.foo.org.nz.
+bsd-server.foo.org.nz. IN A 172.16.5.12
+bsd-relay.foo.org.nz. IN A 192.168.2.100
+router1.foo.org.nz. IN A 10.25.1.106
+router1.foo.org.nz. IN A 172.16.5.2
+router2.foo.org.nz. IN A 172.16.5.3
+router2.foo.org.nz. IN A 192.168.2.2
+wind-relay.foo.org.nz. IN A 192.168.2.101
+lin-client.foo.org.nz. IN A 172.16.5.30
+www.foo.org.nz.IN CNAME bsd-server.foo.org.nz.

@@ -1,1 +1,18 @@
 
+
+$TTL 3h
+5.16.172.in-addr.arpa. IN SOA ns1.foo.org.nz. camertp1.foo.org.nz. (
+    235291
+    3h
+    1h
+    3d
+    1h
+)
+
+5.16.172.in-addr.arpa. IN NS ns1.foo.org.nz.
+5.16.172.in-addr.arpa. IN NS ns2.foo.org.nz.
+
+12.5.16.172.in-addr.arpa. IN PTR bsd-server.foo.org.nz.
+30.5.16.172.in-addr.arpa. IN PTR lin-client.foo.org.nz.
+2.5.16.172.in-addr.arpa. IN PTR router1.foo.org.nz.
+3.5.16.172.in-addr.arpa. IN PTR router2.foo.org.nz.
